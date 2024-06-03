@@ -1,5 +1,13 @@
 #!/bin/sh
 cd
+apt update;apt -y upgrade
+
+apt -y install apt install python3-venv python3-pip python3
+
+sleep 3
+
+pip3 install selenium
+
 wget -O - https://raw.githubusercontent.com/ongamfuramfura/selenium-wsl2-ubuntu/main/install-selenium.sh | bash
 
 sleep 5
